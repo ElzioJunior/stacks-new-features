@@ -1,12 +1,30 @@
 # Java 9 NEW Features
 
-## Modules 
+##  Modules - Project JigSaw 
+
 ```java
-This shit is very useful, I need to practice more using this!
+/* 
+Create a module-info into your project home directory
+
+src
+|_ com.elziojr.myproject 
+    |_ module-info.java    -> declare module file here
+    |_ com
+        |_elziojr
+            |_ myproject
+                |_ HelloWorld.java
+target
+*/
+```
+module-info.java
+```java
+module com.elziojr.myproject {
+    requires java.base;
+}
 ```
 
 ## Linking
-### Link module dependencies with another modules to create a minimal runtime environment 
+Link module dependencies with another modules to create a minimal runtime /environment 
 <br>
 
 ## Collection factory methods 
