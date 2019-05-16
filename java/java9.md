@@ -1,5 +1,10 @@
 # Java 9 NEW Features
 
+## The Clean Up Starts
+Since Java 1.1 **A LOT OF** features were being **@Deprecated**, BUT, none of them were **removed**!
+<br>This is the main cause of simples applications, writed in Java, are so heavy.
+<br>So, Clean Up is a new strategy for remove @Deprecated and non-used things, for each release of Java, starting in 9...
+
 ##  Modules - Project JigSaw 
 
 ```java
