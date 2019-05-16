@@ -7,6 +7,14 @@ list.stream()
     .collect(Collectors.toList());
 ```
 
+## OracleJDK and OpenJDK is in the same level of features
+Now oracle get some OracleJdk features and transform than into open-souce features. Then they put the openJdk at the same level of features.<br>
+<img src="features%20openJdk%2011%20same%20level%20oracleJdk.png" />
+<br>
+Some of this closed-sources that are now open-sources features:
+- Flight Recorder (https://openjdk.java.net/jeps/328)
+- Mission Control (https://openjdk.java.net/projects/jmc/7/)
+
 ## HTTP Client (Standard)
 Module: java.net.http
 
