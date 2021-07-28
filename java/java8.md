@@ -46,6 +46,26 @@ List<String> sortedList = list.stream().sorted().collect(Collectors.toList());
 LocalDateTime dateTime = LocalDateTime.now();
 ```
 
+## Lambda vs Method Reference
+```java
+# Example 1
+
+Function<String,String> toUpperCaseLambda = (s)->s.toUpperCase();
+
+Function<String,String> toUpperCaseMethodRefernce = String::toUpperCase;
+
+# Example 2
+public class RefactorMethodReferenceExample {
+
+    static Predicate<Student> predicateUsingLambda = (s) -> s.getGradeLevel()>=3;
+
+    static Predicate<Student> predicateUsingMetRef = RefactorMethodReferenceExample::greaterThan;
+    
+static public  boolean greaterThan(Student student){
+        return student.getGradeLevel() >3;
+    }
+```
+
 ## Difference between ZonedDateTime and LocalDateTime:
 Basically, ZonedDateTime allows the user to set the Zone that he wants via ZoneId or default just calling ZonedDateTime, instead LocalDateTime 
 gets the time without timezone information.
