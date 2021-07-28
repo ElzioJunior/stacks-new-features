@@ -46,7 +46,7 @@ List<String> sortedList = list.stream().sorted().collect(Collectors.toList());
 LocalDateTime dateTime = LocalDateTime.now();
 ```
 
-# Lambda vs Method Reference
+## Lambda vs Method Reference
 ```java
 # Example 1
 
