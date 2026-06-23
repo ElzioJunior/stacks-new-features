@@ -6,6 +6,9 @@ Stacks
 =================
 
   * Java
+    * [Java 25](https://github.com/ElzioJunior/stacks-new-features/blob/master/java/java25.md)
+    * [Java 21](https://github.com/ElzioJunior/stacks-new-features/blob/master/java/java21.md)
+    * [Java 17](https://github.com/ElzioJunior/stacks-new-features/blob/master/java/java17.md)
     * [Java 11](https://github.com/ElzioJunior/stacks-new-features/blob/master/java/java11.md)
     * [Java 9](https://github.com/ElzioJunior/stacks-new-features/blob/master/java/java9.md)
     * [Java 8](https://github.com/ElzioJunior/stacks-new-features/blob/master/java/java8.md)

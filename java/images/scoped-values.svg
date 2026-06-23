@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">Scoped values</title>
+  <desc id="desc">A request ID is bound to a scope and read by methods called inside that scope.</desc>
+  <rect width="900" height="360" fill="#f8fafc"/>
+  <text x="40" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Scoped values: context that lives only inside one operation</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="70" y="88" width="760" height="210" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="98" y="124" font-size="20" font-weight="700" fill="#164e63">Scope: REQUEST_ID = "req-42"</text>
+    <rect x="110" y="164" width="180" height="74" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="150" y="207" font-size="18" fill="#1e3a8a">Controller</text>
+    <rect x="360" y="164" width="180" height="74" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="408" y="207" font-size="18" fill="#14532d">Service</text>
+    <rect x="610" y="164" width="180" height="74" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="663" y="207" font-size="18" fill="#78350f">Logger</text>
+    <line x1="290" y1="201" x2="360" y2="201" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="540" y1="201" x2="610" y2="201" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="118" y="270" font-size="15" fill="#475569">Every method inside the scope can read the same immutable value.</text>
+    <text x="70" y="330" font-size="15" fill="#475569">Outside the scope, REQUEST_ID is not bound anymore.</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

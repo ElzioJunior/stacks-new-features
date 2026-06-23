@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">Virtual threads</title>
+  <desc id="desc">Many virtual threads run on fewer platform threads and can park while waiting for IO.</desc>
+  <rect width="900" height="430" fill="#f8fafc"/>
+  <text x="40" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Virtual threads: simple blocking code, high concurrency</text>
+  <g font-family="Arial, sans-serif" font-size="16">
+    <rect x="70" y="88" width="760" height="84" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="96" y="122" font-size="20" font-weight="700" fill="#1e3a8a">Application tasks</text>
+    <text x="96" y="149" fill="#334155">HTTP request, database query, queue message, file read...</text>
+    <g fill="#bfdbfe" stroke="#2563eb">
+      <rect x="95" y="202" width="120" height="54" rx="8"/>
+      <rect x="235" y="202" width="120" height="54" rx="8"/>
+      <rect x="375" y="202" width="120" height="54" rx="8"/>
+      <rect x="515" y="202" width="120" height="54" rx="8"/>
+      <rect x="655" y="202" width="120" height="54" rx="8"/>
+    </g>
+    <text x="122" y="234" fill="#111827">virtual</text>
+    <text x="263" y="234" fill="#111827">virtual</text>
+    <text x="403" y="234" fill="#111827">virtual</text>
+    <text x="543" y="234" fill="#111827">virtual</text>
+    <text x="683" y="234" fill="#111827">virtual</text>
+    <line x1="155" y1="256" x2="260" y2="320" stroke="#64748b" stroke-width="2"/>
+    <line x1="295" y1="256" x2="360" y2="320" stroke="#64748b" stroke-width="2"/>
+    <line x1="435" y1="256" x2="450" y2="320" stroke="#64748b" stroke-width="2"/>
+    <line x1="575" y1="256" x2="540" y2="320" stroke="#64748b" stroke-width="2"/>
+    <line x1="715" y1="256" x2="640" y2="320" stroke="#64748b" stroke-width="2"/>
+    <rect x="205" y="320" width="210" height="66" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="242" y="360" font-size="18" fill="#14532d">platform thread</text>
+    <rect x="485" y="320" width="210" height="66" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="522" y="360" font-size="18" fill="#14532d">platform thread</text>
+    <text x="70" y="410" fill="#475569">When a virtual thread waits for IO, the JVM can free the carrier thread for other work.</text>
+  </g>
+</svg>

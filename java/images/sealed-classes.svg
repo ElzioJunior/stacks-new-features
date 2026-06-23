@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" viewBox="0 0 820 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sealed classes</title>
+  <desc id="desc">A sealed Payment type permits only three implementations.</desc>
+  <rect width="820" height="360" fill="#f8fafc"/>
+  <text x="40" y="48" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Sealed class: the parent controls who can extend it</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="305" y="82" width="210" height="74" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="349" y="113" font-size="18" font-weight="700" fill="#1e3a8a">sealed interface</text>
+    <text x="372" y="137" font-size="20" fill="#111827">Payment</text>
+    <line x1="410" y1="156" x2="180" y2="230" stroke="#64748b" stroke-width="2"/>
+    <line x1="410" y1="156" x2="410" y2="230" stroke="#64748b" stroke-width="2"/>
+    <line x1="410" y1="156" x2="640" y2="230" stroke="#64748b" stroke-width="2"/>
+    <rect x="80" y="230" width="200" height="70" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="116" y="272" font-size="19" fill="#14532d">CreditCardPayment</text>
+    <rect x="310" y="230" width="200" height="70" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="360" y="272" font-size="19" fill="#78350f">PixPayment</text>
+    <rect x="540" y="230" width="200" height="70" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="590" y="272" font-size="19" fill="#7f1d1d">CashPayment</text>
+    <text x="85" y="326" font-size="15" fill="#475569">Only these classes are allowed by the compiler.</text>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="250" viewBox="0 0 920 250" role="img" aria-labelledby="title desc">
+  <title id="title">Java LTS timeline</title>
+  <desc id="desc">Timeline from Java 11 to Java 25 LTS releases.</desc>
+  <rect width="920" height="250" fill="#f8fafc"/>
+  <text x="40" y="44" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Java LTS path after Java 11</text>
+  <line x1="90" y1="128" x2="830" y2="128" stroke="#334155" stroke-width="4"/>
+  <g font-family="Arial, sans-serif">
+    <circle cx="110" cy="128" r="18" fill="#2563eb"/>
+    <text x="83" y="178" font-size="22" font-weight="700" fill="#111827">11</text>
+    <text x="61" y="204" font-size="14" fill="#475569">2018 LTS</text>
+    <circle cx="350" cy="128" r="18" fill="#059669"/>
+    <text x="323" y="178" font-size="22" font-weight="700" fill="#111827">17</text>
+    <text x="301" y="204" font-size="14" fill="#475569">2021 LTS</text>
+    <circle cx="590" cy="128" r="18" fill="#d97706"/>
+    <text x="563" y="178" font-size="22" font-weight="700" fill="#111827">21</text>
+    <text x="541" y="204" font-size="14" fill="#475569">2023 LTS</text>
+    <circle cx="830" cy="128" r="18" fill="#dc2626"/>
+    <text x="803" y="178" font-size="22" font-weight="700" fill="#111827">25</text>
+    <text x="781" y="204" font-size="14" fill="#475569">2025 LTS</text>
+  </g>
+  <g fill="#334155" font-family="Arial, sans-serif" font-size="15">
+    <text x="176" y="104">records</text>
+    <text x="176" y="124">sealed classes</text>
+    <text x="416" y="104">virtual threads</text>
+    <text x="416" y="124">sequenced collections</text>
+    <text x="652" y="104">scoped values</text>
+    <text x="652" y="124">compact programs</text>
+  </g>
+</svg>
