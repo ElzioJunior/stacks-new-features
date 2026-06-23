@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390" role="img" aria-labelledby="title desc">
+  <title id="title">BuildKit build flow</title>
+  <desc id="desc">BuildKit can run independent Dockerfile steps with better cache and secret handling.</desc>
+  <rect width="900" height="390" fill="#f8fafc"/>
+  <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">BuildKit: faster builds with safer inputs</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="70" y="88" width="190" height="70" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="112" y="130" font-size="18" fill="#1e3a8a">Dockerfile</text>
+    <line x1="260" y1="123" x2="345" y2="123" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="345" y="88" width="210" height="70" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="411" y="130" font-size="18" fill="#14532d">BuildKit</text>
+    <line x1="555" y1="123" x2="640" y2="123" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="640" y="88" width="190" height="70" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="690" y="130" font-size="18" fill="#78350f">Image</text>
+    <rect x="140" y="230" width="150" height="58" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="181" y="265" font-size="17" fill="#4c1d95">cache</text>
+    <rect x="375" y="230" width="150" height="58" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="408" y="265" font-size="17" fill="#7f1d1d">secrets</text>
+    <rect x="610" y="230" width="150" height="58" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <text x="634" y="265" font-size="17" fill="#0c4a6e">parallelism</text>
+    <line x1="215" y1="230" x2="390" y2="158" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="450" y1="230" x2="450" y2="158" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="685" y1="230" x2="510" y2="158" stroke="#94a3b8" stroke-width="2"/>
+    <text x="70" y="340" font-size="15" fill="#475569">Secrets can be mounted during build without becoming image layers.</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

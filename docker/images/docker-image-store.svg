@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">Docker image store shift</title>
+  <desc id="desc">Docker Engine 29 uses the containerd image store by default for fresh installs.</desc>
+  <rect width="900" height="360" fill="#f8fafc"/>
+  <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Docker 29: image storage aligns with containerd</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="70" y="94" width="210" height="76" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="108" y="138" font-size="18" fill="#1e3a8a">docker pull</text>
+    <line x1="280" y1="132" x2="380" y2="132" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="380" y="94" width="210" height="76" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="425" y="138" font-size="18" fill="#14532d">containerd</text>
+    <line x1="590" y1="132" x2="690" y2="132" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="690" y="94" width="150" height="76" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="728" y="138" font-size="18" fill="#78350f">image</text>
+    <rect x="170" y="230" width="560" height="66" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="210" y="268" font-size="18" fill="#164e63">Fresh installs use the containerd image store by default.</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
