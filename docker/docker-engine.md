@@ -2,22 +2,18 @@
 
 Docker Engine does not use Java-style LTS labels in the official release notes. So, for this stack, the pages below use the stable Engine release branches from 2018 onward.
 
-Each page explains the difference compared with the previous listed Docker Engine version, with a backend developer focus: builds, local environments, networking, debugging, CI images, and the small amount of infrastructure context that affects application teams.
+Each page explains the difference compared with the previous listed Docker version group and focuses only on what matters to backend engineers.
 
 <img src="images/docker-backend-workflow.svg" />
 
 ## Versions
 
+- [Docker Core Concepts](docker-core.md)
 - [Docker 29.x](docker29.md)
-- [Docker 28.x](docker28.md)
-- [Docker 27.x](docker27.md)
-- [Docker 26.x](docker26.md)
+- [Docker 26.x to 28.x](docker26-28.md)
 - [Docker 25.0](docker25.md)
-- [Docker 24.0](docker24.md)
-- [Docker 23.0](docker23.md)
-- [Docker 20.10](docker20-10.md)
-- [Docker 19.03](docker19-03.md)
-- [Docker 18.09](docker18-09.md)
+- [Docker 23.0 and 24.0](docker23-24.md)
+- [Docker 18.09 to 20.10](docker18-20.md)
 
 ## Backend Mental Model
 

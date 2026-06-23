@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="360" viewBox="0 0 940 360" role="img" aria-labelledby="title desc">
+  <title id="title">Kafka backend event flow</title>
+  <desc id="desc">Backend services produce events to Kafka topics and consumer groups read partitions while tracking offsets.</desc>
+  <rect width="940" height="360" fill="#f8fafc"/>
+  <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Kafka as a backend event flow</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="60" y="95" width="150" height="70" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="98" y="136" font-size="18" fill="#1e3a8a">Producer</text>
+    <line x1="210" y1="130" x2="300" y2="130" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="300" y="82" width="250" height="96" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="385" y="114" font-size="18" font-weight="700" fill="#14532d">Topic</text>
+    <text x="333" y="145" font-size="15" fill="#334155">partition 0 | partition 1 | partition 2</text>
+    <line x1="550" y1="130" x2="650" y2="130" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="650" y="95" width="220" height="70" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="700" y="136" font-size="18" fill="#78350f">Consumer group</text>
+    <rect x="300" y="235" width="250" height="60" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="366" y="271" font-size="17" fill="#4c1d95">Committed offsets</text>
+    <line x1="760" y1="165" x2="425" y2="235" stroke="#94a3b8" stroke-width="2"/>
+    <text x="60" y="330" font-size="15" fill="#475569">Kafka keeps events in a log; consumers move by committing offsets.</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

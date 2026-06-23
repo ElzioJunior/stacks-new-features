@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">Kafka tiered storage</title>
+  <desc id="desc">Recent Kafka log segments stay on broker disk while older segments move to remote storage.</desc>
+  <rect width="900" height="360" fill="#f8fafc"/>
+  <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Tiered storage: longer retention, cheaper history</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="80" y="98" width="300" height="90" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="142" y="134" font-size="20" font-weight="700" fill="#14532d">Broker local disk</text>
+    <text x="124" y="163" font-size="16" fill="#334155">recent active log segments</text>
+    <line x1="380" y1="143" x2="520" y2="143" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="520" y="98" width="300" height="90" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="606" y="134" font-size="20" font-weight="700" fill="#1e3a8a">Remote storage</text>
+    <text x="592" y="163" font-size="16" fill="#334155">older retained segments</text>
+    <rect x="245" y="245" width="410" height="62" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="297" y="282" font-size="18" fill="#78350f">Consumers can replay older events when retention allows.</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
